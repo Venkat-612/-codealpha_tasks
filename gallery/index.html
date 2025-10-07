@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+        <nav id="filter-nav">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="nature">Nature</button>
+            <button data-filter="city">City</button>
+            <button data-filter="people">People</button>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item" data-category="nature" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80" alt="Nature 1">
+            </div>
+            <div class="gallery-item" data-category="nature" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&auto=format&fit=crop&q=80" alt="Nature 2">
+            </div>
+            <div class="gallery-item" data-category="nature" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1200&auto=format&fit=crop&q=80" alt="Nature 3">
+            </div>
+
+            <div class="gallery-item" data-category="city" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&auto=format&fit=crop&q=80" alt="City 1">
+            </div>
+            <div class="gallery-item" data-category="city" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&auto=format&fit=crop&q=80" alt="City 2">
+            </div>
+            <div class="gallery-item" data-category="city" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&auto=format&fit=crop&q=80" alt="City 3">
+            </div>
+
+            <div class="gallery-item" data-category="people" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1200&auto=format&fit=crop&q=80" alt="People 1">
+            </div>
+            <div class="gallery-item" data-category="people" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1200&auto=format&fit=crop&q=80" alt="People 2">
+            </div>
+            <div class="gallery-item" data-category="people" data-source="Unsplash">
+                <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1200&auto=format&fit=crop&q=80" alt="People 3">
+            </div>
+        </div>
+    </main>
+    <div id="lightbox" class="hidden">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
